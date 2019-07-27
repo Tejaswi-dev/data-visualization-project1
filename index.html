@@ -1,0 +1,184 @@
+<html>
+
+<head>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="load-data.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+        <div class="container" style="max-width: 180%">
+                <div class="jumbotron mt-3 center-align" style="text-align: center">
+                        <h2> DATS 6401: Visualization of Complex Data</h2>
+                        <h2>Individual Project 1</h2>
+                        <h3> Education,Health, and Military Data of 10
+                                Nations</h3>
+                        <h4> Tejaswini Vuppu July 27, 2019</h4>
+                </div>
+                <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#question1">Question 1</a></li>
+                        <li><a data-toggle="tab" href="#question2">Question 2</a></li>
+                        <li><a data-toggle="tab" href="#question3">Question 3</a></li>
+                        <li><a data-toggle="tab" href="#question4">Question 4</a></li>
+                        <li><a data-toggle="tab" href="#question5">Question 5</a></li>
+                        
+                </ul>
+                <div class="tab-content">
+                        <div id="question1" class="tab-pane fade in active">
+                                <h4>PieCharts representing information about healthcare,education and military of 10
+                                        nations</h4>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                <div id="EducationC10Pie_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                <div id="HealthC10Pie_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col">
+                                                <div id="MilitaryC10Pie_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <h4>GeoMaps Column Charts representing information about healthcare and
+                                                education of 10 nations</h4>
+                                        <div class="col">
+                                                <h4>Educational expenditure of top 10 countriesin 2014 </h4>
+                                                <div id="EducationC10Geo_div" style="width:680px; height:520px"></div>
+                                        </div>
+                                        <div class="col">
+                                                <h4>Health expenditure of top 10 countries, 2014 </h4>
+                                                <div id="HealthC10Geo_div" style="width:680px; height:520px"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <h4>Column Charts representing information about healthcare,education and
+                                                military of 10 nations</h4>
+                                        <div class="col col-sm-6">
+                                                <div id="EducationC10_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                <div id="HealthC10_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                <div id="MilitaryC10_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <h4>Stack Charts representing information about healthcare,education and
+                                                military of 10 nations</h4>
+                                        <div class="col col-sm-6">
+                                                <div id="EducationC10Stack_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                <div id="HealthC10Stack_div"></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!--end question1-->
+                        <div id="question2" class="tab-pane fade">
+                                <h4>(2) Compare the spending data to country's GDP Calculating in Millions USD $ mean
+                                        GDP of 10 nations, 2009-2014</h4>
+                                <div class="row">
+                                        <h4>Checking the differences between the Education, Health, and Military
+                                                Expenditure spending gradually to country's GDP </h4>
+                                        <div class="col col-sm-6">
+                                                <div id="EducationGDP_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                <div id="HealthcareGDP_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                        <div id="MilitaryGDP_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <h4>Checking the mean's of education,healthcare and military expenditure to mean of GDP, 2009-2014</h4>
+                                        <div class="col col-sm-6">
+                                                        <div id="ScatterEducation_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                        <div id="ScatterHealth_div" ></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                        <div id="ScatterMilitary_div" ></div>
+
+                                        </div>
+                                </div>
+
+                        </div><!--end question2-->
+                        <div id="question3" class="tab-pane fade">
+                        <h4>(3) Compare the education and health to the overall military spending of the country</h4>
+                        <div class="row">
+                                <h4>Checking the educational and health spending to country's military spending</h4>
+                                <div class="col col-sm-6">
+                                                <div id="EducationMilitary_div" ></div>
+                                </div>
+                                <div class="col col-sm-6">
+                                                <div id="HealthMilitary_div"></div>
+                                </div>
+                        </div>
+                        </div><!--end question3-->
+                        <div id="question4" class="tab-pane fade">
+                                <h4>(4)Compare the per person education spending to the per person GDP</h4>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                        <div id="PercapitaEducationGdp_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                        <div id="PercapitaHealthGdp_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                        <div id="PercapitaMilitaryGdp_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <h4>Education is to Health is to GDP Spending in 2014 (Millions USD $)</h4>
+                                        <div class="col col-sm-6">
+                                                        <div id="HGE_div"></div>
+                                        </div>
+                                </div>
+
+                        </div><!--end question4-->
+                        <div id="question5" class="tab-pane fade">
+                                <h4>(5) Fastest growing countries in healthcare and educational spending in fixed value in percentage </h4>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                        <div id="HealthC10FixedValue_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                        <div id="HealthC10PercentValue_div"></div>
+                                        </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col col-sm-6">
+                                                        <div id="EducationC10FixedValue_div"></div>
+                                        </div>
+                                        <div class="col col-sm-6">
+                                                        <div id="EducationC10PercentValue_div"></div>
+                                        </div>
+                                </div>
+                        </div><!--question5-->
+                        
+                </div>
+        </div>
+
+
+
+
+
+</body>
+
+</html>
